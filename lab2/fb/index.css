@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Questrial', sans-serif;
+    background-color: #f0f2f5;
+}
+
+#left{
+    position: absolute;
+    width: 500px;
+    top:30%;
+    left: 17%;
+    font-size: 150%;
+    font-weight: 60;
+    color: #1877EE;
+}
+
+#left p{
+    color: black;
+    padding-top: 2%;
+    font-size: 120%;
+}
+
+#right{
+    position: absolute;
+    height: 60%;
+    width: 26%;
+    left: 55%;
+    top: 13%;
+}
+
+#login-card{
+    position: relative;
+    top: 10%;
+    width: 100%;
+    height: 80%;
+    border-radius: 10px 10px;
+    box-shadow: 1px 1px 10px rgb(177, 177, 177);
+    background-color: white;
+}
+
+.forms{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    height: fit-content;
+    width: 80%;
+    background-color: white;
+}
+
+::placeholder{
+    color:rgb(177, 177, 177);
+}
+
+.in{
+    position: relative;
+    margin-top: 10px;
+    width: 115%;
+    height: 2em;
+    border-radius: 5px;
+    font-size: 120%;
+    border: 1px solid #C4C4C4;
+    background-color: white;
+    padding: 5px;
+    outline-color: #1877EE;
+}
+
+#fb{
+    font-weight:bold;
+}
+
+#f-btn{
+    position: relative;
+    margin-top: 15px;
+    width: 118%;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 120%;
+    font-weight: bold;
+    background-color: #1877EE;
+    color: white;
+    border: none;
+}
+
+form{
+    background-color: white;
+}
+
+.forms a{
+    position: relative;
+    left: 8em;
+    top: 1em;
+    background-color: white;
+}
+
+.line-break{
+    position: relative;
+    height: 1px;
+    width: 90%;
+    background-color: #C4C4C4;
+    top: 2em;
+    left: 14%;
+}
+
+#new-acc{
+    background-color: #17BF13;
+    position: relative;
+    top: 3em;
+    left: 20%;
+    width: 80%;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 120%;
+    font-weight: bold;
+    border: none;
+    color:white
+}
+
+#bot-card{
+    position: relative;
+    top: 5em;
+    font-size: 90%;
+    text-align: center;
+}

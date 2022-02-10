@@ -1,0 +1,140 @@
+body{
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 54px;
+}
+
+.logo{
+    position: relative;
+    width: 137px;
+    height: 54px;
+    left: 75px;
+    top: 0px;
+}
+
+.logo-img{
+    position: absolute;
+    height: 25px;
+    width: 110px;
+    left: 10px;
+    top: 13px;
+}
+
+.leftbar{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    justify-content: space-between;
+    position: absolute;
+    top: 3px;
+    left: 220px;
+    padding-left: 0px;
+    list-style: none;
+}
+
+.leftbar li{
+    position: relative;
+    top: 0px;
+    font-size: 80%;
+}
+
+.rightbar{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    justify-content: space-between;
+    position: absolute;
+    top: 3px;
+    right: 127px;
+    padding-left: 0px;
+    list-style: none;
+}
+
+.rightbar li{
+    position: relative;
+    top: 0px;
+    font-size: 80%;
+}
+
+.banner{
+    position: relative;
+    width: 1384px;
+    height: 517px;
+    left: 59px;
+    top: 35px;
+}
+
+.banner-img{
+    position: absolute;
+    width: 1365px;
+    height: 510px;
+    top: 2px;
+    left: 10px;
+}
+
+.banner-text{
+    color: white;
+    position: relative;
+    height: 200px;
+    width: 520px;
+    top: 155px;
+    left: 95px;
+}
+
+.banner-text p{
+    position: relative;
+    font-size: 96%;
+    top: -10px;
+}
+
+.banner-text button{
+    height: 38px;
+    width: 255px;
+    font-weight: 600;
+}
+
+.card-wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 435px;
+}
+
+.card{
+    position: relative;
+    top: 80px;
+    width: 347px;
+    left: 70px;
+}
+
+.card-img{
+    height: 180px;
+    width: 323px;
+}
+
+.card p{
+    font-size: 15px;
+}
+
+.card h1{
+    font-size: 20px;
+}
+
+.card a{
+    color: rgb(0, 93, 166);
+    font-size: 15px;
+}
+
+.btn-wrap{
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
