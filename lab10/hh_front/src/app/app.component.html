@@ -1,0 +1,42 @@
+<div *ngIf="!logged">
+    <div class="body">
+        <div id="window">
+        <h1> Login </h1>
+        <br>
+        <br>
+        <br>
+        <div class="data"> 
+            <label for="username">
+            <br>
+            <input id="username" [(ngModel)]="username" type="text" name="" placeholder="Login">
+            </label>
+            <br>
+            <br>
+            <br>
+
+            <label for = "user-pin">
+
+            <br>
+            <input type="password" [(ngModel)]="password" id = "user-pin" placeholder="Password">
+            <br>
+            <br>
+            <br>
+            <button id="LoginBtn" (click)="login()"> Login </button>
+
+            <br>
+            <br>
+            <br>
+            </label>
+        </div>
+        
+        
+
+
+    </div>
+</div>
+</div>
+
+<div *ngIf="logged" class="logged">
+<router-outlet></router-outlet>
+<button class="logout" (click)="logout()">Logout</button>
+</div>

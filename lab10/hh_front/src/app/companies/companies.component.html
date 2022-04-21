@@ -1,0 +1,20 @@
+<div class="body">
+
+    <h1>Companies</h1>
+    <ul>
+        <li  *ngFor="let company of companies">
+            <p>
+                <input type="radio" name="companies" id="{{company.id}}" (change)="checked(company.id)">
+                name: {{company.name}} <br>
+                description: {{company.description}} <br>
+                city: {{company.city}} <br>
+                address: {{company.address}} <br>
+            </p>
+        </li>
+    </ul>
+
+    <div *ngIf="choose">
+        <app-vacancy [company_id]="selected_company_id"></app-vacancy>
+    </div>
+
+</div>

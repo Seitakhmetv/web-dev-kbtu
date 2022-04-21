@@ -1,0 +1,13 @@
+<div class="body">
+    <h1>Vacancies</h1>
+    <ul>
+        <li  *ngFor="let vacancy of vacancies">
+            <p>
+                name: {{vacancy.name}} <br>
+                description: {{vacancy.description}} <br>
+                salary: {{vacancy.salary}} <br>
+                company: {{vacancy.company}} <br>
+            </p>
+        </li>
+    </ul>
+</div>
