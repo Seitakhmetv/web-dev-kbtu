@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { CompaniesComponent } from './companies/companies.component';
 import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http'
 import { FormsModule } from '@angular/forms';
-import { AuthInterceptor } from './authinterceptor';
+import { AuthInterceptor } from './AuthInterceptor';
 import { VacancyComponent } from './vacancy/vacancy.component';
 
 @NgModule({

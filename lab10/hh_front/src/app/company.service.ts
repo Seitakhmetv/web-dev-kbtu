@@ -30,4 +30,8 @@ export class CompanyService {
   getCompanyVacancies(id: number): Observable<Vacancy[]>{
     return this.http.get<Vacancy[]>(`${this.BASE_URL}/api/companies/${id}/vacancies/`, {})
   }
+
+  getCityCompanies(city: string): Observable<Company[]>{
+    return this.http.get<Company[]>(`${this.BASE_URL}/api/companies/${city}/`, {})
+  }
 }

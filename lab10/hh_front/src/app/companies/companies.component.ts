@@ -1,4 +1,4 @@
-import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { CompanyService } from '../company.service';
 import { Company, Vacancy } from '../models';
 
@@ -9,6 +9,7 @@ import { Company, Vacancy } from '../models';
 })
 export class CompaniesComponent implements OnInit, OnChanges {
 
+  @Input()
   companies: Company[] = [];
   choose: boolean = false;
   selected_company_id: number = 0;

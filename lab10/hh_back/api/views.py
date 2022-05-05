@@ -104,7 +104,24 @@ def list_of_company_vacancies(request, id):
     for vacancy in the_vacancies:
         if vacancy['company'] == the_company['name']:
             company_vacancy_list.append(vacancy)
-    return JsonResponse(company_vacancy_list, safe=False)
+@permission_classes((IsAuthenticated,))
+def companyByCity(request, city):
+    array_of_companies = Company.objects.all()
+
+    citycompanies = []
+
+    serializer = CompanySerializer(array_of_companies, many=True)
+    for company in serializer.data:
+        if company['city'].lower() == city:
+            citycompanies.append(company)
+
+    if len(citycompanies) > 0:
+        return JsonResponse(citycompanies, safe=False)
+    else:
+        return JsonResponse({'message': f'no companies in {city}'}, safe=False)
+
+    
+    return JsonResponse(citycompanies, safe=False)
 
  
 @permission_classes((IsAuthenticated,))

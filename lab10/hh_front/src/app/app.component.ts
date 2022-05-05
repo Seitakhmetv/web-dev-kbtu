@@ -1,5 +1,6 @@
 import { Component, OnChanges, OnInit } from '@angular/core';
 import { CompanyService } from './company.service';
+import { Company } from './models';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +13,7 @@ export class AppComponent implements OnInit{
   logged = false
   username = '';
   password = '';
+  companies: Company[] = [];
 
   ngOnInit() {
     const token = localStorage.getItem('token');
@@ -36,5 +38,13 @@ export class AppComponent implements OnInit{
   logout(){
     this.logged = false;
     localStorage.removeItem('token');
+  }
+
+  city_select(city: string){
+    console.log(city)
+    this.companyService.getCityCompanies(city).subscribe((data)=>{
+      console.log(data);
+      this.companies = data;
+    })
   }
 }

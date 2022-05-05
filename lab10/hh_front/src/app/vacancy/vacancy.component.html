@@ -2,11 +2,11 @@
     <h1>Vacancies</h1>
     <ul>
         <li  *ngFor="let vacancy of vacancies">
-            <p>
-                name: {{vacancy.name}} <br>
+            <p style="color: green;">
+                name: <span style="color: black;">{{vacancy.name}}</span> <br>
                 description: {{vacancy.description}} <br>
-                salary: {{vacancy.salary}} <br>
-                company: {{vacancy.company}} <br>
+                salary: <span style="color: red;">{{vacancy.salary}}</span> <br>
+                company: <span style="color: purple;">{{vacancy.company}}</span> <br>
             </p>
         </li>
     </ul>
